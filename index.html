@@ -1082,22 +1082,22 @@
           </p>
           <div class="video-wrap">
             <video autoplay loop muted playsinline style="width:100%;display:block;max-height:500px;object-fit:contain;background:#000;">
-              <source src="lançamento_saldo_inicial.mp4" type="video/mp4">
+              <source src="rotina_3420_lançamento_avulso.mp4" type="video/mp4">
             </video>
             <div class="video-footer">Lançamento avulso — Rotina 3420</div>
           </div>
           <div class="sub-title">Campos do lançamento</div> 
           <div class="fields-grid">
-            <div class="field-item"><div class="field-label">Data da nota fiscal <span class="field-req">obrigatório</span></div><div class="field-desc">Utilizar a data que está dando a entrada do bem, <strong>não recomendado utilizar a data de emissão</strong>.</div></div>
-            <div class="field-item"><div class="field-label">Número da nota fiscal <span class="field-req">obrigatório</span></div><div class="field-desc">Incluir número de acordo com a nota. Em caso de ausência de número, colocar "0".</div></div>
-            <div class="field-item"><div class="field-label">Bem <span class="field-req">obrigatório</span></div><div class="field-desc">Bem cadastrado na rotina 3401 conforme item da nota fiscal.</div></div>
-            <div class="field-item"><div class="field-label">Número do patrimonio <span class="field-opt">opcional</span></div><div class="field-desc">Pode ser utilizado para o controle interno.</div></div>
-            <div class="field-item"><div class="field-label">Valor CIAP <span class="field-opt">opcional</span></div><div class="field-desc">Atualmente empresa não possui, contatar o fiscal e analisar possibilidade.</div></div>
-            <div class="field-item"><div class="field-label">Valor DIFAL <span class="field-opt">opcional</span></div><div class="field-desc">Incluir de acordo com a nota fiscal (caso tenha).</div></div>
+            <div class="field-item"><div class="field-label">Filial <span class="field-req">obrigatório</span></div><div class="field-desc">Informar filial de lançamento de acordo com a nota.</div></div>
+            <div class="field-item"><div class="field-label">Cód. Bem <span class="field-req">obrigatório</span></div><div class="field-desc">Bem cadastrado na rotina 3401 conforme item da nota fiscal.</div></div>
+            <div class="field-item"><div class="field-label">Dt. Entrada do bem <span class="field-req">obrigatório</span></div><div class="field-desc">Utilizar a data que está dando a entrada do bem, <strong>não recomendado utilizar a data de emissão</strong>.</div></div>
+            <div class="field-item"><div class="field-label">Responsável e Localização <span class="field-req">obrigatório</span></div><div class="field-desc">Vincular conforme identificação interna. <strong>Caso não tenha, utilizar o geral</strong>.</div></div>
+            <div class="field-item"><div class="field-label">Dt. Últi. Depreciação <span class="field-req">obrigatório</span></div><div class="field-desc">Utilizar a mesma data de entrada.</div></div>
+            <div class="field-item"><div class="field-label">Dt. Término CIAP <span class="field-opt">opcional</span></div><div class="field-desc">Deixar em branco.</div></div>
+            <div class="field-item"><div class="field-label">Número do patrimonio <span class="field-req">obrigatório</span></div><div class="field-desc">Utilizar código de controle  interno <strong>Caso não tenha, criar sequencia</strong>.</div></div>
             <div class="field-item"><div class="field-label">Valor do bem <span class="field-req">obrigatório</span></div><div class="field-desc">Incluir valor da nota, embutindo os impostos e outras despesas.</div></div>
-            <div class="field-item"><div class="field-label">Taxa depreciação anual <span class="field-req">obrigatório</span></div><div class="field-desc">Vinculado ao grupo patrimonial ligado ao bem na rotina 3401 <strong>automático</strong>.</div></div>
-            <div class="field-item"><div class="field-label">Responsável e Localização<span class="field-req">obrigatório</span></div><div class="field-desc">Vincular conforme identificação interna. <strong>Caso não tenha, utilizar o geral</strong>.</div></div>
-            <div class="field-item"><div class="field-label">Fornecedor<span class="field-opt">opcional</span></div><div class="field-desc">Vincular conforme cadastro existente rotina 202. <strong>Caso não tenha, pode criar ou deixar em branco</strong>.</div></div> 
+            <div class="field-item"><div class="field-label">Tx Deprec. atual <span class="field-req">obrigatório</span></div><div class="field-desc">Informar taxa do grupo na 3406 vinculado ao bem na rotina 3401 <strong>conforme demonstrado no vídeo</strong>.</div></div>
+            <div class="field-item"><div class="field-label">Contabiliza bem <span class="field-req">obrigatório</span></div><div class="field-desc">Manter a flag marcada paa gerar o bem nas demais rotinas da forma correta.</div></div> 
           </div>
           <div class="box box-atencao">
             <div class="box-title">⚠️ Atenção!!</div>
@@ -1106,7 +1106,7 @@
           <div class="box box-info">
             <div class="box-title">ℹ️ Informações adicionais</div>
             Os campos <strong>Valor depreciação acumulada a Valor a depreciar atribuído</strong> devem ser utilizados somente com a presença da contabilidade. Este processo tem importância quando há migração de bases entre sistemas, troca de contabilidade ou incorporação.
-            Processo é utilizado para dar continuidade em cálculos passados de composição patrimonial.
+            Processo é utilizado para dar continuidade em cálculos passados de composição patrimonial. <strong>Ao adicionar o bem e depois concluir, automaticamente o bem será individualizado</strong>.
           </div>
         </div>
       </div>
