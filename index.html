@@ -1355,6 +1355,52 @@
         </div>
       </div>
 
+       <!-- 14º CONFERIR GRUPO x CONTA GERENCIAL-->
+      <div id="sec-p14" class="section">
+        <div class="card">
+          <div class="card-title"><span class="icon">🏷️</span>14º Passo — Conferir vinculo de conta gerencial e grupo patrimonial</div>
+          <div class="rotina-tag">Rotina 1007 e 3419 - Conferir entrada da nota com grupo cadastrado no patrimônio</div>
+          <p>
+            A conferência é importante para termos conformidade entre os dados lançados a nível de nota fiscal com 
+            <strong>vínculo da conta gerencial com o grupo patrimonial</strong> incluído no módulo 34.
+          
+         <div class="sub-title">Rotinas de validação</div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin:12px 0 20px;">
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#333;padding:10px 14px;background:#f8faf8;border-radius:6px;border-left:3px solid #2e7d32;">
+            💼 <div><strong>Rotina 1007</strong> — Conferir a conta gerencial e o CFOP utilizado. Usuário reponsável pelo lançamento da nota deve ter utilizado 
+              <strong>o grupo 893 da rotina 570,</strong> vinculado a conta gerencial que condiz com a entrada do bem.</div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#333;padding:10px 14px;background:#f8faf8;border-radius:6px;border-left:3px solid #1976d2;">
+            🔄 <div><strong>Rotina 570</strong> — Validar evidentimente se a conta escolhida está alocado no  <strong>grupo 893</strong>. Analisar se a "flag" de investimento da conta está ativa.</div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:#333;padding:10px 14px;background:#f8faf8;border-radius:6px;border-left:3px solid #f9a825;">
+            🚚 <div><strong>Rotina 3419</strong> — Conferir o grupo que foi alocado a entrada da nota fiscal, analisando a descrição e finalidade do bem,
+              junto a taxa de depreciação e data de entrada. Grupo vinculado deve estar ligado a conta gerencial escolhida..</div>
+          </div>
+        </div>
+
+           </p>
+          <div class="video-wrap">
+            <video autoplay loop muted playsinline style="width:100%;display:block;max-height:500px;object-fit:contain;background:#000;">
+              <source src="rotina_3421_venda_de_bem.mp4" type="video/mp4">
+            </video>
+            <div class="video-footer">Saída de bens — Rotina 3421</div>
+          </div>
+          
+        <div class="sub-title">Passo a passo — Efetuar uma venda</div>
+        <div class="steps">
+          <div class="step"><div class="step-num">1</div><div class="step-body"><strong>Selecionar o cliente</strong><p>Informe o cliente da operação de venda.</p></div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-body"><strong>Definir contas a receber</strong><p>Defina se deseja <strong>Gerar contas a receber</strong> Vinculado à operação.</p></div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-body"><strong>Preencher os dados da operação</strong><p>Informe o <strong>frete</strong>Selecione o <strong>bem</strong>Informe o <strong>CFOP de saída</strong><strong>Valor da operação</strong></p></div></div>
+          <div class="step"><div class="step-num">4</div><div class="step-body"><strong>Confirmar</strong><p>Clique em <strong>Confirmar</strong>O sistema perguntará se deseja emitir a nota fiscal, acionando automaticamente a <strong>Rotina 1452</strong></p></div></div>
+        </div>
+        <div class="box box-info">
+          <div class="box-title">ℹ️ Emissão de nota fiscal</div>
+          Ao concluir a operação de venda, o sistema aciona automaticamente a <strong>Rotina 1452</strong> para emissão da nota fiscal de saída. Certifique-se de que o <strong>CFOP</strong> informado está correto antes de confirmar — em caso de dúvida, acione o <strong>time fiscal</strong>.
+        </div>
+        </div>
+      </div>
+
 
     </div><!-- /mod-content -->
   </div><!-- /mod-body -->
